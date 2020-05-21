@@ -43,13 +43,16 @@ console.log(palindrome('eye'));
 //4 -longest word in the string
 
 findLongestWord = (str) => {
-    let words = str.split(" ");
-    let longest = "";
+    //1st solution
+    // let words = str.split(" ");
+    // let longest = "";
 
-    for (let word of words) {
-        if ( word.length > longest.length) longest = word;
-    }
-        return longest.length;
+    // for (let word of words) {
+    //     if ( word.length > longest.length) longest = word;
+    // }
+    //     return longest.length;
+    //2nd solution
+    return str.split(" ").sort(function(a, b) { return b.length - a.length})[0];
 }
 console.log(findLongestWord("Today was a lovely day"));
 
