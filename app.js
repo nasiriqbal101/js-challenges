@@ -40,6 +40,8 @@ palindrome = (str) => {
 }
 console.log(palindrome('eye'));
 
+
+
 //4 -longest word in the string
 
 findLongestWord = (str) => {
@@ -51,6 +53,7 @@ findLongestWord = (str) => {
     //     if ( word.length > longest.length) longest = word;
     // }
     //     return longest.length;
+
     //2nd solution
     return str.split(" ").sort(function(a, b) { return b.length - a.length})[0];
 }
