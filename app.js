@@ -60,8 +60,14 @@ findLongestWord = (str) => {
 }
 console.log(findLongestWord("Today was a lovely day"));
 
-//5 -
+//5 -titleCase a string
 
-
-
+titleCase = (str) => {
+    let words = str.toLowerCase().split(" ");
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+    }
+    return words.join(" ");
+}
+console.log(titleCase("Today is sunday"));
 
