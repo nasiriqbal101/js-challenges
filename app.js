@@ -82,3 +82,19 @@ titleCase = (str) => {
 }
 console.log(titleCase("Today is sunday"));
 
+//6 Largest Number
+
+largestOfFour = (arr) => {
+    let maxes = []
+    for( let i =0; i < arr.length; i++){
+        let tempMax=  arr[i][0];
+
+ for (let j = 0; j <arr[i].length; j++) {
+    //  let currentElement = arr[i][j]
+     console.log(arr[i][j])
+ }
+    }
+
+}
+largestOfFour([[4, 5, 6, 8], [13, 23, 18, 29], [32, 44, 54, 67], [1000,200,800,600]]);
+
