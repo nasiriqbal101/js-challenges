@@ -90,11 +90,14 @@ largestOfFour = (arr) => {
         let tempMax=  arr[i][0];
 
  for (let j = 0; j <arr[i].length; j++) {
-    //  let currentElement = arr[i][j]
-     console.log(arr[i][j])
+     let currentElement = arr[i][j]
+     if (currentElement >=tempMax) {
+         tempMax = currentElement;
+     }
  }
+ maxes.push(tempMax)
     }
-
+return maxes;
 }
-largestOfFour([[4, 5, 6, 8], [13, 23, 18, 29], [32, 44, 54, 67], [1000,200,800,600]]);
+console.log(largestOfFour([[4, 5, 6, 8], [13, 23, 18, 29], [32, 44, 54, 67], [2000,200,800,600]]));
 
