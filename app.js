@@ -75,7 +75,7 @@ console.log(findLongestWord("Today was a lovely day"));
 //2nd solution
 
 titleCase = (str) => {
-    let titled = str.toLowerCase().split(" ").map(function(elem) {
+    let titled = str.toLowerCase().split(" ").map(function (elem) {
         return elem[0].toUpperCase() + elem.slice(1);
     })
     return titled.join(" ");
@@ -86,18 +86,18 @@ console.log(titleCase("Today is sunday"));
 
 largestOfFour = (arr) => {
     let maxes = []
-    for( let i =0; i < arr.length; i++){
-        let tempMax=  arr[i][0];
+    for (let i = 0; i < arr.length; i++) {
+        let tempMax = arr[i][0];
 
- for (let j = 0; j <arr[i].length; j++) {
-     let currentElement = arr[i][j]
-     if (currentElement >=tempMax) {
-         tempMax = currentElement;
-     }
- }
- maxes.push(tempMax)
+        for (let j = 0; j < arr[i].length; j++) {
+            let currentElement = arr[i][j]
+            if (currentElement >= tempMax) {
+                tempMax = currentElement;
+            }
+        }
+        maxes.push(tempMax)
     }
-return maxes;
+    return maxes;
 }
-console.log(largestOfFour([[4, 5, 6, 8], [13, 23, 18, 29], [32, 44, 54, 67], [2000,200,800,600]]));
+console.log(largestOfFour([[4, 5, 6, 8], [13, 23, 18, 29], [32, 44, 54, 67], [2000, 200, 800, 600]]));
 
