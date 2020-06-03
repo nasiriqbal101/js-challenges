@@ -95,9 +95,10 @@ largestOfFour = (arr) => {
                 tempMax = currentElement;
             }
         }
+
         maxes.push(tempMax)
     }
     return maxes;
 }
-console.log(largestOfFour([[4, 5, 6, 8], [13, 23, 18, 29], [32, 44, 54, 67], [2000, 200, 800, 600]]));
+console.log(largestOfFour([[4, 5, 6, 8], [13, 16, 18, 29], [32, 44, 54, 67], [2000, 200, 800, 600]]));
 
