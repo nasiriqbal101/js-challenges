@@ -102,3 +102,12 @@ largestOfFour = (arr) => {
 }
 console.log(largestOfFour([[4, 5, 6, 8], [13, 16, 18, 29], [32, 44, 54, 67], [2000, 200, 800, 600]]));
 
+//7 Confirm Ending
+
+confirmEnding = (str, target) => {
+    if(str.endsWith(target)){
+        return true;
+    }
+    return false;
+}
+console.log(confirmEnding("Hello", "o"))
