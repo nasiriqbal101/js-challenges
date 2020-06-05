@@ -105,9 +105,13 @@ console.log(largestOfFour([[4, 5, 6, 8], [13, 16, 18, 29], [32, 44, 54, 67], [20
 //7 Confirm Ending
 
 confirmEnding = (str, target) => {
-    if(str.endsWith(target)){
+    // if(str.endsWith(target)){
+    //     return true;
+    // }
+    // return false;
+    if ( str.substr(-target.length) === target){
         return true;
     }
     return false;
 }
-console.log(confirmEnding("Hello", "o"))
+console.log(confirmEnding("Hello", "l"))
