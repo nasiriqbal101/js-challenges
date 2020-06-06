@@ -114,4 +114,4 @@ confirmEnding = (str, target) => {
     }
     return false;
 }
-console.log(confirmEnding("Hello", "l"))
+console.log(confirmEnding("Hello", "0"))
