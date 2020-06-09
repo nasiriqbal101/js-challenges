@@ -109,9 +109,12 @@ confirmEnding = (str, target) => {
     //     return true;
     // }
     // return false;
-    if ( str.substr(-target.length) === target){
-        return true;
-    }
-    return false;
+
+    // if (str.substr(-target.length) === target) {
+    //     return true;
+    // }
+    // return false;
+
+    return str.substr(-target.length) === target;
 }
-console.log(confirmEnding("Hello", "0"))
+console.log(confirmEnding("Hello", "o"))
