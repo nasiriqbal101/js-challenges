@@ -117,4 +117,5 @@ confirmEnding = (str, target) => {
 
     return str.substr(-target.length) === target;
 }
+
 console.log(confirmEnding("Hello", "o"))
